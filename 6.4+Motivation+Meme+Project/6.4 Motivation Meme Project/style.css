@@ -1,0 +1,31 @@
+
+.outfit{
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+body{
+    background-color: black;
+    size: 100%;
+}
+h1{
+    color: white;
+    padding: 0px;
+    margin-left: 15rem;
+    font-size: 3rem:
+}
+img{
+    width: 600px;
+    border: 5px solid white;
+    /*margin: 5% 10% 0% 35%;*/
+}
+.banner{
+  margin-left: 50rem;
+  margin-top: 10rem;
+}
+p{
+    color: white;
+    margin-left: 13rem;
+    font-size: 2rem;
+}
