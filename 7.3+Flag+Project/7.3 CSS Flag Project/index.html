@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* Write your CSS Code here */
+    .flag{
+      width: 600px;
+      height: 300px;
+      background-color: rgb(235, 232, 232);
+      box-shadow: 0px 20px 80px 10px ;
+    }
+    .square-blue{
+     width: 15%;
+     height: 168px;
+     background-color: rgb(0, 0, 151);
+     z-index: 2;
+     position: absolute;
+     top: 0.8%;
+    }
+    .line-red{
+      width:100%;
+      height: 8%;
+      background-color: #9b1c2c;
+    }
+    .line-white{
+      width:100%;
+      height: 8%;
+      background-color: #ffffff;
+    }
+    #star{
+      width: 15px;  
+      aspect-ratio: 1;
+      background: #ffffff;
+      clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn)))); 
+      position: absolute;
+      top: 2%;
+      left: 15px;
+      z-index: 3;
+      box-shadow: 
+    }
+    #star::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 45;
+    }
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="flag">
+    <!--p>The Flag</p>-->
+    <div class="line-red"></div>
+    <div class="line-white"></div>
+    <div class="line-red"></div>
+    <div class="line-white"></div>
+    <div class="line-red"></div>
+    <div class="line-white"></div>
+    <div class="line-red"></div>
+    <div class="line-white"></div>
+    <div class="line-red"></div>
+    <div class="line-white"></div>
+    <div class="line-red"></div>
+    <div class="line-white"></div>
+    <div class="line-red"></div>   
+    </div>
+  </div>
+  <div class="square-blue"></div>
+  <div id="star"></div>
+</body>
+
+</html>
