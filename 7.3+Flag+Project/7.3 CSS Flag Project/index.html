@@ -43,13 +43,29 @@
       top: 2%;
       left: 15px;
       z-index: 3;
-      box-shadow: 
+
     }
-    #star::before{
-      content: '';
+    /*#star 1{
+      width: 15px;  
+      aspect-ratio: 1;
+      background: #ffffff;
+      clip-path: polygon(50% 0,
+      calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+      calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+      calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn)))); 
       position: absolute;
-      left: 0;
-      top: 45;
+      top: 2%;
+      left: 15px;
+      z-index: 3;
+    }*/
+    .stars-photo{
+      width: 15%;
+      height: 168px;
+      z-index: 4;
+      position: absolute;
+      top: 0.8%;
+      left: 0.4%;
     }
   </style>
 </head>
@@ -83,7 +99,10 @@ https://appbrewery.github.io/flag-of-laos/
     </div>
   </div>
   <div class="square-blue"></div>
-  <div id="star"></div>
+
+    <img class="stars-photo" src="stars.png"/>
+
+
 </body>
 
 </html>
