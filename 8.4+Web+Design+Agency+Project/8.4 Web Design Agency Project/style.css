@@ -10,22 +10,18 @@ body {
 }
 .main {
   flex: 1;
+  
 }
 
 h1 {
   font-size: 5rem;
-  display: inline-block;
-}
+  float: left;
 
+}
 footer {
   text-align: right;
   color: midnightblue;
-  clear: left;
-}
-img{
-  float: left;
-  width: 20%;
-  display: inline-block;
+  clear: both;
 }
 .left{
   float: left;
@@ -33,13 +29,57 @@ img{
 .right{
   float: right;
 }
-p{
-  
+.card{
+  width: 45%;
+}
+.tile-image{
+  height: 200px;
+  float: left;
+  margin-left: 50px;
+}
+img{
+  margin-right: 10px;
+  display: block;
 }
 
-@media (max-width: 900px){
-  body{
-    width: 200px;
-    height: 200px;
-  }
+.creative{
+  color: rgb(194, 174, 60);
 }
+
+
+@media (max-width: 680px){
+  .logo{
+    width: 150px;
+  }
+  .card{
+    width: 50rem;
+    object-fit: cover;
+  }
+  h1{
+    margin-left: 70px;
+    width: 30rem;
+    font-size: 70px;
+  }
+  p{
+    width: 24rem;
+    margin-left: 70px;
+    font-size: 25px;
+  }
+  .card-title {
+    width: 1rem;
+    margin-left: 5rem;
+    font-size: 2rem;
+  }
+  footer{
+  position:relative;
+  margin-left: 5rem;
+  margin-top: 93rem;
+  }
+  .tile-image{
+    width: 25rem;
+    height: 15rem;
+  }
+
+}
+  
+  
